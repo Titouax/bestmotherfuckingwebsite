@@ -78,18 +78,18 @@
     </p>.
   </body>
   <script>
-function init() {
-    var count=5;
-    var counter=setInterval(timer,1000);
-        function timer(){
-            count=count-1;
-            if(count==0){
-                alert("This is an alert")
-                window.location = "http://www.example.com";
-                return;
-            }
-        }
-    }
-    window.onload = init;
+  unction init() {
+      var count = 5; // set secconds
+      var counter = setInterval(timer, 1000 * count);
+
+      function timer() {
+          alert("This is an alert")
+          window.location = "http://www.example.com";
+          //clearInterval(counter) // stop interval
+      }
+
+  }
+
+  window.onload = init;
 </script>
 </html>
