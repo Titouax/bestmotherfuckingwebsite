@@ -11,7 +11,7 @@
         font-size: 18px;
         color: #444
         padding:0 10px;
-      } 
+      }
       h1, h2, h3 {
         line-height: 1.2;
       }
@@ -77,4 +77,19 @@
       This page—that isn't a total fucking eyesore—was created by <a href="https://www.linkedin.com/in/titouan-dessus/">me</a>
     </p>.
   </body>
+  <script>
+function init() {
+    var count=10;
+    var counter=setInterval(timer,1000);
+        function timer(){
+            count=count-1;
+            if(count==0){
+                alert("This is an alert")
+                window.location = "http://www.example.com";
+                return;
+            }
+        }
+    }
+    window.onload = init;
+</script>
 </html>
